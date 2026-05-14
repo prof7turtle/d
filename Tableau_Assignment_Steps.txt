@@ -1,0 +1,313 @@
+
+TABLEAU DATA VISUALIZATION ASSIGNMENT
+====================================
+
+Assignment:
+Perform the following data visualization operations using Tableau on Adult and Iris datasets.
+a. 1D (Linear) Data visualization
+b. 2D (Planar) Data Visualization
+c. 3D (Volumetric) Data Visualization
+d. Temporal Data Visualization
+e. Multidimensional Data Visualization
+f. Tree / Hierarchical Data Visualization
+g. Network Data Visualization
+
+
+===========================================================
+SECTION 1: IRIS DATASET VISUALIZATIONS
+===========================================================
+
+STEP 1: IMPORT IRIS DATASET
+---------------------------
+1. Open Tableau Public/Desktop.
+2. Click on “Text File”.
+3. Select the Iris.csv dataset.
+4. Click “Open”.
+5. Click on “Sheet 1”.
+
+
+
+a) 1D (LINEAR) DATA VISUALIZATION
+---------------------------------
+Goal:
+Display count of flower species using Bar Chart.
+
+Steps:
+1. Open a new sheet.
+2. Drag “Species” to Rows.
+3. Drag “Number of Records” or “Iris.csv Count” to Columns.
+4. Tableau automatically creates a Bar Chart.
+5. Rename the sheet as “1D Visualization”.
+
+Output:
+Bar chart showing count of Iris-setosa, Iris-versicolor, and Iris-virginica.
+
+
+
+b) 2D (PLANAR) DATA VISUALIZATION
+---------------------------------
+Goal:
+Create Scatter Plot using Sepal Length and Petal Length.
+
+Steps:
+1. Open a new sheet.
+2. Drag “Sepal Length Cm” to Columns.
+3. Drag “Petal Length Cm” to Rows.
+4. Drag “Species” to Color in Marks Card.
+5. Scatter Plot will be created automatically.
+6. Rename the sheet as “2D Visualization”.
+
+Output:
+2D Scatter Plot comparing Sepal Length and Petal Length.
+
+
+
+c) 3D (VOLUMETRIC) DATA VISUALIZATION
+-------------------------------------
+Goal:
+Create pseudo 3D Bubble Chart.
+
+Steps:
+1. Open a new sheet.
+2. Drag “Sepal Length Cm” to Columns.
+3. Drag “Petal Length Cm” to Rows.
+4. Drag “Sepal Width Cm” to Size.
+5. Drag “Species” to Color.
+6. Select “Packed Bubble” or Bubble Chart from Show Me.
+7. Rename the sheet as “3D Visualization”.
+
+Output:
+Bubble chart representing three dimensions using X-axis, Y-axis, and Bubble Size.
+
+
+
+d) TEMPORAL DATA VISUALIZATION
+------------------------------
+Goal:
+Create Line Chart using Date and Sepal Length.
+
+Steps:
+1. Right-click in Data Pane.
+2. Select “Create Calculated Field”.
+3. Name the field as “Date”.
+4. Enter the formula:
+
+   DATEADD('day',[Id],#2025-01-01#)
+
+5. Click OK.
+6. Open a new sheet.
+7. Drag “Date” to Columns.
+8. Drag “Sepal Length Cm” to Rows.
+9. Select “Line Chart” from Show Me.
+10. Rename the sheet as “Temporal Visualization”.
+
+Output:
+Line chart showing variation of Sepal Length over generated dates.
+
+
+
+e) MULTIDIMENSIONAL DATA VISUALIZATION
+--------------------------------------
+Goal:
+Visualize multiple attributes together.
+
+Steps:
+1. Open a new sheet.
+2. Drag “Species” to Rows.
+3. Drag “Sepal Length Cm” to Size.
+4. Drag “Petal Length Cm” to Color.
+5. Drag “Sepal Width Cm” to Label.
+6. Select “Packed Bubble” from Show Me.
+7. Rename the sheet as “Multidimensional Visualization”.
+
+Output:
+Packed bubble chart using multiple dimensions simultaneously.
+
+
+
+f) TREE / HIERARCHICAL DATA VISUALIZATION
+-----------------------------------------
+Goal:
+Create Treemap for hierarchical visualization.
+
+Steps:
+1. Open a new sheet.
+2. Select “Species” and “Petal Length Cm”.
+3. Click “Treemap” from Show Me.
+4. Drag “Species” to Color.
+5. Drag “Petal Length Cm” to Size.
+6. Rename the sheet as “Tree Visualization”.
+
+Output:
+Treemap showing hierarchical relationship among flower species.
+
+
+
+g) NETWORK DATA VISUALIZATION
+-----------------------------
+Goal:
+Create simple network-style relationship visualization.
+
+Steps:
+1. Open a new sheet.
+2. Drag “Species” to Rows.
+3. Drag “Sepal Width Cm” to Columns.
+4. Select “Circle View” from Show Me.
+5. Drag “Petal Width Cm” to Size.
+6. Rename the sheet as “Network Visualization”.
+
+Output:
+Circle-based network relationship visualization.
+
+
+
+===========================================================
+SECTION 2: ADULT DATASET VISUALIZATIONS
+===========================================================
+
+STEP 1: IMPORT ADULT DATASET
+----------------------------
+1. Open Tableau.
+2. Click on “Text File”.
+3. Select Adult.csv dataset.
+4. Click “Open”.
+5. Click on “Sheet 1”.
+
+
+
+a) 1D (LINEAR) DATA VISUALIZATION
+---------------------------------
+Goal:
+Display count of Education categories.
+
+Steps:
+1. Open a new sheet.
+2. Drag “Education” to Rows.
+3. Drag “Number of Records” to Columns.
+4. Bar Chart will be created automatically.
+5. Rename the sheet as “1D Visualization”.
+
+Output:
+Bar chart representing count of Education categories.
+
+
+
+b) 2D (PLANAR) DATA VISUALIZATION
+---------------------------------
+Goal:
+Create Scatter Plot between Age and Hours-per-week.
+
+Steps:
+1. Open a new sheet.
+2. Drag “Age” to Columns.
+3. Drag “Hours-per-week” to Rows.
+4. Drag “Income” to Color.
+5. Rename the sheet as “2D Visualization”.
+
+Output:
+Scatter plot showing relationship between Age and Working Hours.
+
+
+
+c) 3D (VOLUMETRIC) DATA VISUALIZATION
+-------------------------------------
+Goal:
+Create pseudo 3D Bubble Chart.
+
+Steps:
+1. Open a new sheet.
+2. Drag “Age” to Columns.
+3. Drag “Hours-per-week” to Rows.
+4. Drag “Capital-gain” to Size.
+5. Drag “Income” to Color.
+6. Select Bubble Chart from Show Me.
+7. Rename the sheet as “3D Visualization”.
+
+Output:
+Bubble chart representing three-dimensional data.
+
+
+
+d) TEMPORAL DATA VISUALIZATION
+------------------------------
+Goal:
+Create Line Chart using generated Date field.
+
+Steps:
+1. Right-click in Data Pane.
+2. Select “Create Calculated Field”.
+3. Name it “Date”.
+4. Enter formula:
+
+   DATEADD('day',[Id],#2025-01-01#)
+
+5. Click OK.
+6. Open a new sheet.
+7. Drag “Date” to Columns.
+8. Drag “Age” to Rows.
+9. Select “Line Chart” from Show Me.
+10. Rename the sheet as “Temporal Visualization”.
+
+Output:
+Line chart showing Age variation across dates.
+
+
+
+e) MULTIDIMENSIONAL DATA VISUALIZATION
+--------------------------------------
+Goal:
+Create Heatmap or Bubble Chart using multiple fields.
+
+Steps:
+1. Open a new sheet.
+2. Drag “Occupation” to Rows.
+3. Drag “Education” to Columns.
+4. Drag “Age” to Size.
+5. Drag “Income” to Color.
+6. Select Heatmap or Packed Bubble from Show Me.
+7. Rename the sheet as “Multidimensional Visualization”.
+
+Output:
+Visualization showing multiple dimensions together.
+
+
+
+f) TREE / HIERARCHICAL DATA VISUALIZATION
+-----------------------------------------
+Goal:
+Create Treemap for Occupation hierarchy.
+
+Steps:
+1. Open a new sheet.
+2. Select “Occupation” and “Education”.
+3. Click “Treemap” from Show Me.
+4. Drag “Age” to Size.
+5. Drag “Income” to Color.
+6. Rename the sheet as “Tree Visualization”.
+
+Output:
+Treemap representing hierarchy among Occupation and Education.
+
+
+
+g) NETWORK DATA VISUALIZATION
+-----------------------------
+Goal:
+Create relationship-based Circle View.
+
+Steps:
+1. Open a new sheet.
+2. Drag “Occupation” to Rows.
+3. Drag “Education” to Columns.
+4. Select “Circle View” from Show Me.
+5. Drag “Number of Records” to Size.
+6. Rename the sheet as “Network Visualization”.
+
+Output:
+Circle-based network visualization showing relationships between Occupation and Education.
+
+
+
+===========================================================
+END OF ASSIGNMENT
+===========================================================
